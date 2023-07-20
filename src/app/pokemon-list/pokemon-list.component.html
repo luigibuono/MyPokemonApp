@@ -1,0 +1,21 @@
+
+
+
+<img
+src="http://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif"
+width="200"/>
+
+<button mat-raised-button color="warn"><a routerLink="/"><div id="hola">GO BACK</div></a></button>
+
+<div class ="pokemon-list">
+<app-pokemon-card
+*ngFor= "let pokemon of pokemonService.pokemons; index as i"
+[pokemon]="pokemon.name"
+[numero]= "i + 1"
+>
+</app-pokemon-card>
+
+
+</div>
+
+

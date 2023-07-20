@@ -1,0 +1,17 @@
+@import './config-scss/variable.scss';
+@import './config-scss/reset.scss';
+@import './config-scss/rem-calc.scss';
+
+html{
+    font-family: 'Roboto',sans-serif;
+    background: var(--primary-color);
+}
+
+main{
+    width: rem-calc(600);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

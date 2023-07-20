@@ -1,0 +1,15 @@
+.pokemon-list{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#hola{
+  font-size: large;
+  font-family:impact;
+  color: black;
+  cursor: pointer;
+}
+img{
+  display:flex;
+}
