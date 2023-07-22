@@ -37,23 +37,5 @@ export class PokeListComponent implements OnInit {
     this.getAllPokemons =  filter;
 
   }
-  @Input()
-  numero! : number
 
-  @Input ()
-pokemon!: string;
-
-  pageImagePokemon(){
-    const numeroFormattato = this.leadingZero(this.numero);
-
-    return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${numeroFormattato}.png`
-  }
-  leadingZero(str: string | number, size = 3): string{
-    let s = String(str);
-
-    while (s.length < (size || 2)){
-    s='0' +s;
-    }
-    return s;
-  }
 }
